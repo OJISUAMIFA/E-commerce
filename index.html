@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoBo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="Images/nobo-low-resolution-color-logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <body>
+                    <div class="header"></div>
+                </body>
+                <!-- Cart-Icon -->
+                <i class='bx bx-shopping-bag' id="cart-icon"></i>
+                <!-- Cart -->
+                <div class="cart">
+                    <h2 class="cart-title">Your Cart</h2>
+                    <!-- Content -->
+                    <div class="cart-content">
+                        <div class="cart-box">
+                            <img src="Images/buy-2.jpg" class="cart-img">
+                            <div class="details-box">
+                                <div class="cart-product-title">Mens Black Sneakers</div>
+                                <div class="cart-price">₦3999</div>
+                                <input type="number" value="1" class="cart-quantity">
+                            </div>
+                            <i class="bx bxs-trash-alt cart-remove"></i>
+                        </div>
+                    </div>
+                    <!-- Total -->
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">₦0</div>
+                    </div>
+                    <!-- Buy Button -->
+                    <button type="button" class="btn-buy">Buy Now</button>
+                    <!-- Cart Close -->
+                    <i class='bx bx-x' id="close-cart"></i>
+                </div>
+                <img src="Images/download8-removebg-preview.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Give Your Workout<br>A New Style!</h1>
+                    <p>Success isn't always about greatness. It's about consistency. Consistent,<br>hard work gains success. Greatness will come.</p>
+                    <a href="#" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="Images/2XU___Triathlon__Workout___Compression_Apparel_-_XMiles-removebg-preview.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="Images/pexels-mnz-1598505.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="Images/pexels-godisable-jacob-1936848.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="Images/pexels-axecop-2697616.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="product details.html"><img src="Images/product-1.jpg" class="product-img"></a>
+                <a href="product details.html"><h4 class="product-title">Maroon Printed T-Shirt</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="price">₦2500</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="col-4">
+                <img src="Images/product-2.jpg" class="product-img">
+                <h4 class="product-title">Mens Black Sneakers</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="price">₦3999</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="col-4">
+                <img src="Images/product-12.jpg" class="product-img">
+                <h4 class="product-title">Black Nike Joggers</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p class="price">₦3550</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="col-4">
+                <img src="Images/product-4.jpg" class="product-img">
+                <h4 class="product-title">Navy blue shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="price">₦1800</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="bracelet.html"><img src="Images/pexels-the-glorious-studio-12026053.jpg" class="product-img"></a>
+                <h4 class="product-title">Silver Diamond Bracelet</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="price">₦59500</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="col-4">
+                <img src="Images/product-7.jpg" class="product-img">
+                <h4 class="product-title">Colored Socks</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="price">₦1200</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="col-4">
+                <img src="Images/product-10.jpg" class="product-img">
+                <h4 class="product-title">Black and Red Sneakers</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p class="price">₦7000</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="col-4">
+                <img src="Images/Alloy Hip Hop Luxury 2 PCS Hip-Hop Chain Full Diamond Watch Bracelet Lady Quartz Watch - Rose Gold.png" class="product-img">
+                <h4 class="product-title">Diamond wrist watch and bracelet</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p class="price">₦59,500</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="Images/product-3.jpg" class="product-img">
+                <h4 class="product-title">Grey Joggers</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="price">₦2300</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="col-4">
+                <img src="Images/Men Reflective Letter Graphic Tee & Drawstring Waist Joggers.jpeg" class="product-img">
+                <h4 class="product-title">Men's shirt and joggers</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="price">₦4500</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="col-4">
+                <img src="Images/product-12.jpg" class="product-img">
+                <h4 class="product-title">Black Nike Joggers</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p class="price">₦1999</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="col-4">
+                <img src="Images/product-6.jpg" class="product-img">
+                <h4 class="product-title">Black Puma T-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="price">₦3999</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="Images/TOP_Luxury_Design_Full_of_Iced_Out___Diamond_Watch-removebg-preview.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on NoBo</p>
+                    <h1>TOP Luxury Designer Watches</h1>
+                    <small>Indulge in most of our unisex desginer watches at an affordable price to enable us make your dressing a little more approachable and attractive.</small>
+                    <br>
+                    <a href="watches.html" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonial">
+        <div class="small-container">
+            <h2 class="title">Customer's Review</h2>
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolore sunt non doloribus consectetur quaerat veniam. Rerum sunt sapiente, ipsa aut, voluptatum et, minus tempore magnam corporis praesentium consectetur labore!</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <img src="Images/pexels-andrea-piacquadio-774909.jpg">
+                        <h3>Andrea Parker</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolore sunt non doloribus consectetur quaerat veniam. Rerum sunt sapiente, ipsa aut, voluptatum et, minus tempore magnam corporis praesentium consectetur labore!</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <img src="Images/pexels-italo-melo-2379005.jpg">
+                        <h3>James Lei</h3>
+                </div>
+                <div class="col-3"> 
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolore sunt non doloribus consectetur quaerat veniam. Rerum sunt sapiente, ipsa aut, voluptatum et, minus tempore magnam corporis praesentium consectetur labore!</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <img src="Images/pexels-cottonbro-studio-10669639.jpg">
+                        <h3>Xin Jan</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="Images/download1.png">
+                </div>
+                <div class="col-5">
+                    <img src="Images/download2.png">
+                </div>
+                <div class="col-5">
+                    <img src="Images/download3.png">
+                </div>
+                <div class="col-5">
+                    <img src="Images/download4.png">
+                </div>
+                <div class="col-5">
+                    <img src="Images/download5.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="fotter-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="Images/download6.png">
+                        <img src="Images/download7.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="Images/nobo-low-resolution-color-logo-removebg-preview.png">
+                    <p>Our Purpose Is to Sustainably Make the Pleasure and benefits of Sports Accessible.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - Ojisua Mifa</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems")
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+
+            }
+        }
+    </script>
+
+</body>
+</html>
